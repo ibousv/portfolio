@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
-export default function DigitalRain() {
+export default function Main() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
@@ -23,9 +24,8 @@ export default function DigitalRain() {
             drops[i] = 1;
         }
 
-       /*  const characters =
-            "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルウォンヴヵヶヷヸヹヺ・ーヽヾヿ"; */
         const characters = "01";
+
         function draw() {
             if (!ctx || !canvas) return;
 
@@ -69,6 +69,35 @@ export default function DigitalRain() {
     return (
         <div className="fixed inset-0 bg-black">
             <canvas ref={canvasRef} className="w-full h-full" />
+            <div className="absolute inset-0 flex items-center justify-center">
+                <div className="bg-black bg-opacity-70 p-8 rounded-lg text-white max-w-2xl mx-4">
+                    <div className="flex flex-col md:flex-row items-center gap-8">
+                        <img
+                            src="/profile-picture.jpg"
+                            alt="Profile"
+                            className="w-48 h-48 rounded-full object-cover border-4 border-green-500"
+                        />
+                        <div>
+                            <h1 className="text-4xl font-bold mb-4">Ibrahima Fall</h1>
+                            <p className="text-xl mb-6">Junior Developer</p>
+                            <div className="space-y-2">
+                                <p>📧 Email: contact.ibrahima.fall@gmail.com</p>
+                                <p>🔗 LinkedIn: <Link href={"https://www.linkedin.com/in/ibrahima-fall-b0922b323/" }>linkedin.com/in/ibrahima-fall-b0922b323</Link></p>
+                                <p>💻 GitHub: <Link href={"https://github.com/ibousv"}>@ibousv </Link></p>
+                                <p> 📍 Location: Dakar, Senegal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="mt-8">
+                        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+                        <p className="text-gray-300">
+                            A passionate developer with experience in Backend development.
+                            Specialized in Spring boot, React, and modern web technologies.
+                            Always eager to learn and take on new challenges.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

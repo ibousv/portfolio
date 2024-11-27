@@ -1,5 +1,7 @@
-import DigitalRain from "@/components/digital-rain";
+import Main from '@/components/main';
 
 export default function Home() {
-  return <DigitalRain />;
+  return (
+    <Main />
+  );
 }
