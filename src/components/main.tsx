@@ -73,7 +73,7 @@ export default function Main() {
                 <div className="bg-black bg-opacity-70 p-8 rounded-lg text-white max-w-2xl mx-4">
                     <div className="flex flex-col md:flex-row items-center gap-8">
                         <img
-                            src="/profile-picture.jpg"
+                            src="/portfolio-pfp.png"
                             alt="Profile"
                             className="w-48 h-48 rounded-full object-cover border-4 border-green-500"
                         />
@@ -82,7 +82,7 @@ export default function Main() {
                             <p className="text-xl mb-6">Junior Developer</p>
                             <div className="space-y-2">
                                 <p>📧 Email: contact.ibrahima.fall@gmail.com</p>
-                                <p>🔗 LinkedIn: <Link href={"https://www.linkedin.com/in/ibrahima-fall-b0922b323/" }>linkedin.com/in/ibrahima-fall-b0922b323</Link></p>
+                                <p>🔗 LinkedIn: <Link href={"https://www.linkedin.com/in/ibrahima-fall-b0922b323/"}>linkedin.com/in/ibrahima-fall-b0922b323</Link></p>
                                 <p>💻 GitHub: <Link href={"https://github.com/ibousv"}>@ibousv </Link></p>
                                 <p> 📍 Location: Dakar, Senegal</p>
                             </div>
